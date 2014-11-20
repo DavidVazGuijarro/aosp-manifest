@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<remote  name="sony" fetch="git://github.com/sonyxperiadev/" />
+
+<remote  name="xperia-aosp" fetch="git://github.com/xperia-aosp-project/" />
+
+<remote name="pabx" fetch="git://github.com/adrian-bl-yuga/" />
+
+<remove-project name="platform/hardware/invensense" />
+<remove-project name="platform/hardware/akm" />
+<remove-project name="platform/hardware/qcom/media" />
+
+<!-- changed repos //-->
+<remove-project name="platform/external/libnfc-nci" />
+<remove-project name="platform/hardware/qcom/bt" />
+<remove-project name="platform/hardware/ril" />
+
+<project path="external/libnfc-nci" name="android_external_libnfc-nci" remote="xperia-aosp" revision="togari-lp" />
+<project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="xperia-aosp" revision="togari-lp" />
+<project path="hardware/ril" name="android_hardware_ril" remote="pabx" revision="lp50" />
+
+<!-- Xperia Z1 source files -->
+<project path="device/sony/amami" name="device-sony-amami" groups="device" remote="xperia-aosp" revision="lp5.0" />
+<project path="device/sony/aries" name="device-sony-aries" groups="device" remote="xperia-aosp" revision="lp5.0" />
+<project path="device/sony/honami" name="device-sony-honami" groups="device" remote="xperia-aosp" revision="lp5.0" />
+<project path="device/sony/leo" name="device-sony-leo" groups="device" remote="xperia-aosp" revision="lp5.0" />
+<project path="device/sony/rhine" name="device-sony-rhine" groups="device" remote="xperia-aosp" revision="lp5.0" />
+<project path="device/sony/shinano" name="device-sony-shinano" groups="device" remote="xperia-aosp" revision="lp5.0" />
+<project path="device/sony/sirius" name="device-sony-sirius" groups="device" remote="xperia-aosp" revision="lp5.0" />
+<project path="device/sony/togari" name="device-sony-togari" groups="device" remote="xperia-aosp" revision="lp5.0" />
+<project path="vendor/sony" name="vendor-sony" groups="vendor" remote="xperia-aosp" revision="lp5.0" />
+
+<project path="vendor/sony/system/dash" name="DASH" groups="device" remote="sony" revision="master" />
+<project path="vendor/sony/system/thermanager" name="thermanager" groups="device" remote="sony" revision="master" />
+<project path="vendor/sony/system/mkqcdtbootimg" name="mkqcdtbootimg" groups="device" remote="sony" revision="master" />
+
+</manifest>
