@@ -14,12 +14,14 @@
 <remove-project name="platform/external/libnfc-nci" />
 <remove-project name="platform/hardware/qcom/bt" />
 <remove-project name="platform/hardware/ril" />
+<remove-project name="platform/system/core" />
 
-<project path="external/libnfc-nci" name="android_external_libnfc-nci" remote="xperia-aosp" revision="togari-lp" />
-<project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="xperia-aosp" revision="togari-lp" />
+<project path="external/libnfc-nci" name="android_external_libnfc-nci" remote="xperia-aosp" revision="lp5.0" />
+<project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="xperia-aosp" revision="lp5.0" />
 <project path="hardware/ril" name="android_hardware_ril" remote="pabx" revision="lp50" />
+<project path="system/core" name="android_system_core" groups="pdk" remote="xperia-aosp" revision="lp5.0" />
 
-<!-- Xperia Z1 source files -->
+<!-- Xperia Z-series source files -->
 <project path="device/sony/amami" name="device-sony-amami" groups="device" remote="xperia-aosp" revision="lp5.0" />
 <project path="device/sony/aries" name="device-sony-aries" groups="device" remote="xperia-aosp" revision="lp5.0" />
 <project path="device/sony/honami" name="device-sony-honami" groups="device" remote="xperia-aosp" revision="lp5.0" />
