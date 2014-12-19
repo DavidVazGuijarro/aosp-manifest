@@ -4,20 +4,9 @@
 
 <remote  name="xperia-aosp" fetch="git://github.com/xperia-aosp-project/" />
 
-<remote name="pabx" fetch="git://github.com/adrian-bl-yuga/" />
-
 <remove-project name="platform/hardware/invensense" />
 <remove-project name="platform/hardware/akm" />
 <remove-project name="platform/hardware/qcom/media" />
-
-<!-- changed repos //-->
-<remove-project name="platform/external/libnfc-nci" />
-<remove-project name="platform/hardware/qcom/bt" />
-<remove-project name="platform/hardware/ril" />
-
-<project path="external/libnfc-nci" name="android_external_libnfc-nci" remote="xperia-aosp" revision="lp5.0" />
-<project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="xperia-aosp" revision="lp5.0" />
-<project path="hardware/ril" name="android_hardware_ril" remote="pabx" revision="lp50" />
 
 <!-- Xperia Z-series source files -->
 <project path="device/sony/amami" name="device-sony-amami" groups="device" remote="xperia-aosp" revision="lp5.0" />
