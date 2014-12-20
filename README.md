@@ -28,23 +28,21 @@ cd hardware/qcom/bt
 
 git cherry-pick 5a6037f1c8b5ff0cf263c9e63777444ba239a056
 
-cd ../ril
-
-git fetch https://github.com/adrian-bl-yuga/android_hardware_ril.git 31929dcee6e648ceb9bf4a4924fe6af9c1e6686d && git cherry-pick FETCH_HEAD
-
-cd ../../display
+cd ../display
 
 git cherry-pick e9e1e3a16144a2410e592f67bab8e24c60df52ea
 
 git revert 0fdae193307fb17bb537598ab62682edd5138b72
 
-cd ../../../system/core
+cd ../../ril
+
+git fetch https://github.com/adrian-bl-yuga/android_hardware_ril.git 31929dcee6e648ceb9bf4a4924fe6af9c1e6686d && git cherry-pick FETCH_HEAD
+
+cd ../../system/core
 
 git fetch https://github.com/tg-togari-lollipop/android_system_core.git 29fc7b17bb5e7a835b74f8038ff5ebdf4d860fc0 && git cherry-pick FETCH_HEAD
 
-git fetch https://github.com/tg-togari-lollipop/android_system_core.git d922d5511373ebf0d060fbf95200ba36ccfd3192 && git cherry-pick FETCH_HEAD
-
-cd ../../../external/libnfc-nci/
+cd ../../external/libnfc-nci/
 
 git fetch https://android.googlesource.com/platform/external/libnfc-nci refs/changes/42/103142/1 && git cherry-pick FETCH_HEAD
 
