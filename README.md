@@ -10,7 +10,7 @@ First we will initialize the aosp repo, execute the following in terminal:
 ```bash
 mkdir aosp
 cd aosp
-repo init -u https://android.googlesource.com/platform/manifest -b android-5.0.0_r7
+repo init -u https://android.googlesource.com/platform/manifest -b android-5.0.2_r1
 ```
 
 To setup a tree and build images for the device put the following snippet in 
