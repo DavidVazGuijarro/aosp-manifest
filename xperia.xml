@@ -4,6 +4,8 @@
 <remote  name="Tassadar" fetch="git://github.com/Tassadar/" />
 <remote  name="xperia-aosp" fetch="git://github.com/xperia-aosp-project/" />
 
+<remove project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
+
 <!-- Xperia Z-series source files -->
 <project path="device/sony/amami" name="device-sony-amami" groups="device" remote="xperia-aosp" revision="lp5.1" />
 <project path="device/sony/aries" name="device-sony-aries" groups="device" remote="xperia-aosp" revision="lp5.1" />
