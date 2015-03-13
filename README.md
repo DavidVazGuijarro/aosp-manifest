@@ -18,6 +18,17 @@ To setup a tree and build images for the device put the following snippet in
 
 You can find the xperia.xml manifest in this repo. Copy the contents to your empty xperia.xml file.
 
+Multirom extras/libbootimg
+--------------------------
+
+`git clone https://github.com/Tasssadar/multirom.git system/extras/multirom
+cd system/extras/multirom
+git submodule update --`
+
+It also needs libbootimg:
+
+`git clone https://github.com/Tasssadar/libbootimg.git system/extras/libbootimg`
+
 Building the rom
 ----------------
 Execute the following in terminal to sync sources and build a rom:

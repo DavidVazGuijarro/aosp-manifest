@@ -4,31 +4,25 @@
 <remote  name="Tassadar" fetch="git://github.com/Tassadar/" />
 <remote  name="xperia-aosp" fetch="git://github.com/xperia-aosp-project/" />
 
-<remove project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
-
 <!-- Xperia Z-series source files -->
 <project path="device/sony/amami" name="device-sony-amami" groups="device" remote="xperia-aosp" revision="lp5.1" />
 <project path="device/sony/aries" name="device-sony-aries" groups="device" remote="xperia-aosp" revision="lp5.1" />
-<project path="device/sony/honami" name="device-sony-honami" groups="device" remote="xperia-aosp" revision="lp5.1" />
+<project path="device/sony/honami" name="device-sony-honami" groups="device" remote="xperia-aosp" revision="lp5.1-mrom" />
 <project path="device/sony/leo" name="device-sony-leo" groups="device" remote="xperia-aosp" revision="lp5.1" />
-<project path="device/sony/rhine" name="device-sony-rhine" groups="device" remote="xperia-aosp" revision="lp5.1" />
+<project path="device/sony/rhine" name="device-sony-rhine" groups="device" remote="xperia-aosp" revision="lp5.1-mrom" />
 <project path="device/sony/shinano" name="device-sony-shinano" groups="device" remote="xperia-aosp" revision="lp5.1" />
 <project path="device/sony/sirius" name="device-sony-sirius" groups="device" remote="xperia-aosp" revision="lp5.1" />
 <project path="device/sony/scorpion" name="device-sony-scorpion" groups="device" remote="xperia-aosp" revision="lp5.1" />
 <project path="device/sony/togari" name="device-sony-togari" groups="device" remote="xperia-aosp" revision="lp5.1" />
 <project path="vendor/sony" name="vendor-sony" groups="vendor" remote="xperia-aosp" revision="lp5.1" />
 
-<project path="vendor/sony/system/dash" name="DASH" groups="device" remote="sony" revision="master" />
-<project path="vendor/sony/system/thermanager" name="thermanager" groups="device" remote="sony" revision="master" />
-<project path="vendor/sony/system/mkqcdtbootimg" name="mkqcdtbootimg" groups="device" remote="sony" revision="master" />
-
-<project path="kernel/sony/msm" name="kernel" groups="device" remote="sony" revision="aosp/ AU_LINUX_ANDROID_LA.BF.2.1_RB1.05.00.00.173.012" />
+<project path="kernel/sony/msm" name="kernel" groups="device" remote="xperia-aosp" revision="aosp/ AU_LINUX_ANDROID_LA.BF.2.1_RB1.05.00.00.173.012" />
 <project path="vendor/sony/system/thermanager" name="thermanager" groups="device" remote="sony" revision="master" />
 <project path="vendor/sony/system/mkqcdtbootimg" name="mkqcdtbootimg" groups="device" remote="sony" revision="master" />
 <project path="vendor/sony/system/timekeep" name="timekeep" groups="device" remote="sony" revision="master" />
 
-<project path="bootable/recovery" name="android_bootable_recovery" remote="github" revision="master"/>
 <project path="system/extras/libbootimg" name="libbootimg" remote="Tassadar" revision="master" />
-<project path="system/extras/multirom" name="multirom" remote="github" revision="new" />
+<project path="system/extras/multirom" name="multirom" remote="xperia-aosp" revision="new" />
 
 </manifest>
+
