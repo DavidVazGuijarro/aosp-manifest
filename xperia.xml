@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 <remote  name="sony" fetch="git://github.com/sonyxperiadev/" />
-
+<remote  name="Tassadar" fetch="git://github.com/Tassadar/" />
 <remote  name="xperia-aosp" fetch="git://github.com/xperia-aosp-project/" />
 
 <!-- Xperia Z-series source files -->
@@ -24,5 +24,9 @@
 <project path="vendor/sony/system/thermanager" name="thermanager" groups="device" remote="sony" revision="master" />
 <project path="vendor/sony/system/mkqcdtbootimg" name="mkqcdtbootimg" groups="device" remote="sony" revision="master" />
 <project path="vendor/sony/system/timekeep" name="timekeep" groups="device" remote="sony" revision="master" />
+
+<project path="bootable/recovery" name="android_bootable_recovery" remote="github" revision="master"/>
+<project path="system/extras/libbootimg" name="libbootimg" remote="Tassadar" revision="master" />
+<project path="system/extras/multirom" name="multirom" remote="github" revision="new" />
 
 </manifest>
