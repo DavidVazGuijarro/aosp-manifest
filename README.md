@@ -10,7 +10,7 @@ First we will initialize the aosp repo, execute the following in terminal:
 ```bash
 mkdir aosp
 cd aosp
-repo init -u https://android.googlesource.com/platform/manifest -b android-5.0.2_r1
+repo init -u https://android.googlesource.com/platform/manifest -b android-5.1.0_r1
 ```
 
 To setup a tree and build images for the device put the following snippet in 
@@ -30,9 +30,19 @@ git cherry-pick 5a6037f1c8b5ff0cf263c9e63777444ba239a056
 
 cd ../display
 
-git cherry-pick e9e1e3a16144a2410e592f67bab8e24c60df52ea
+git revert ab05b00fefd34a761dfaf1ccaf8ad14d325873f4
 
-git revert 0fdae193307fb17bb537598ab62682edd5138b72
+cd ../../../external/libnfc-nci/
+
+git fetch https://android.googlesource.com/platform/external/libnfc-nci refs/changes/42/103142/1 && git cherry-pick FETCH_HEAD
+
+git fetch https://android.googlesource.com/platform/external/libnfc-nci refs/changes/23/103123/1 && git cherry-pick FETCH_HEAD
+
+git fetch https://android.googlesource.com/platform/external/libnfc-nci refs/changes/51/97051/1 && git cherry-pick FETCH_HEAD
+
+cd ../../hardware/libhardware/
+
+git fetch https://android.googlesource.com/platform/hardware/libhardware refs/changes/21/103221/2 && git cherry-pick FETCH_HEAD
 
 cd ../../ril
 
@@ -41,10 +51,6 @@ git fetch https://github.com/adrian-bl-yuga/android_hardware_ril.git 31929dcee6e
 cd ../../system/core
 
 git fetch https://github.com/tg-togari-lollipop/android_system_core.git 29fc7b17bb5e7a835b74f8038ff5ebdf4d860fc0 && git cherry-pick FETCH_HEAD
-
-cd ../../external/libnfc-nci/
-
-git fetch https://android.googlesource.com/platform/external/libnfc-nci refs/changes/42/103142/1 && git cherry-pick FETCH_HEAD
 
 cd ../..
 ```
